@@ -1,5 +1,3 @@
-//AIzaSyDGnoCPRbSIwkTd-0l_A6y-TnH19qrN3e8
-
 document.addEventListener("DOMContentLoaded", () => {
     chrome.storage.sync.get(['geminiApiKey'], ({geminiApiKey}) => {
         if(geminiApiKey) document.getElementById('api-key').value = geminiApiKey;
